@@ -1,7 +1,7 @@
 const quantidade = document.querySelector("#quantidade")
 const resultado = document.querySelector("#resultado")
 function calcular_preco(robux) {
-    const taxaDeConversao = 23 / 1000;
+    const taxaDeConversao = 24 / 1000;
     const precoTotal = robux * taxaDeConversao;
     return precoTotal;
 }
