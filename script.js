@@ -16,8 +16,8 @@ function calcular_com_taxa(valorDesejado) {
             for (v of resultado) {
                 v.style.opacity = '1'
             }
-            document.querySelector('.comtaxa').textContent = `${Number(quantidade.value)} robux com taxa: R$ ${String(calcular_preco(calcular_com_taxa(Number(quantidade.value))).toFixed(2)).replace(".",",")} / valor da gamepass = ${quantidade.value}`
-            document.querySelector('.semtaxa').textContent = `${Number(quantidade.value)} robux sem taxa: R$ ${String(calcular_preco(Number(quantidade.value)).toFixed(2)).replace(".",",")} / valor da gamepass = ${Math.round(calcular_com_taxa(quantidade.value))}`
+            document.querySelector('.comtaxa').textContent = `${Number(quantidade.value)} robux com taxa: R$ ${String(calcular_preco(calcular_com_taxa(Number(quantidade.value))).toFixed(2)).replace(".",",")} / valor da gamepass = ${Math.round(calcular_com_taxa(quantidade.value))}`
+            document.querySelector('.semtaxa').textContent = `${Number(quantidade.value)} robux sem taxa: R$ ${String(calcular_preco(Number(quantidade.value)).toFixed(2)).replace(".",",")} / valor da gamepass = ${quantidade.value}`
             document.querySelector('.final').innerHTML = `<br>O que você receberá escolhendo:<br>Com taxa: ${quantidade.value}<br>Sem taxa: ${quantidade.value * 0.70}`
         } else {
             for (v of resultado) {
